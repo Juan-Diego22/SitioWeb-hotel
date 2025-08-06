@@ -2,34 +2,74 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0http://127.0.0.1:3002/index.html">
     <title>Hotel Eterna Primavera</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <!-- Cabeza de la pagina -->
+    <header class="header">
         <h1>Hotel Eterna Primavera</h1>
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#habitaciones">Habitaciones</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <img src="./img/logo.png" width="50px" alt="Logo del hotel" class="banner">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#habitaciones">Habitaciones</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
+    <!-- Cuerpo de la pagina -->
+    <main>
+        <section id="inicio">
+            <img src="./img/banner.png" style="width: 100%;" alt="Imagen del hotel">
+        </section>
+        <!-- Sección de servicios -->
+         <section id="servicios">
+            <h2>Nuestros servicios</h2 >
+            <div class="carrusel-servicios">
+                <button class="carrusel-btn" id="prev">&#10094;</button>
+                <div class="carrusel-imagenes">
+                    <div class="servicio activo">
+                        <img src="./img/servicios/restaurante.png" alt="restaurante">
+                        <p>Restaurante mirador</p>
+                    </div>
+                    <div class="servicio">
+                        <img src="./img/servicios/gym.png" alt="Gimnasio">
+                        <p>Gimnasio</p>
+                    </div>
+                    <div class="servicio">
+                        <img src="./img/servicios/salon_eventos.png" alt="Salon de eventos">
+                        <p>Salón de eventos</p>
+                    </div>
+                    <div class="servicio">
+                        <img src="./img/servicios/jacuzzi.png" alt="jacuzzi">
+                        <p>Jacuzzi</p>
+                    </div>
+                </div>
+                <button class="carrusel-btn" id="next">&#10095;</button>
+            </div>
+         </section>
 
-    <section id="reservas">
-        <h2>Reservas</h2>
-        <p>Realiza tu reserva en línea de manera rápida y segura.</p>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="fecha">Fecha de llegada:</label>
-            <input type="date" id="fecha" name="fecha" required>
-            <button type="submit">Reservar</button>
-        </form>
+        <!-- Sección de habitaciones -->
+         <section id="rooms">
+
+         </section>
+
+        <!-- Sección de resevas -->
+        <section id="reservas">
+            <h2>Reservas</h2>
+            <p>Realiza tu reserva en línea de manera rápida y segura.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="fecha">Fecha de llegada:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+    </main>
 
     <footer>
         <p>&copy; 2023 Hotel Eterna Primavera. Todos los derechos reservados.</p>

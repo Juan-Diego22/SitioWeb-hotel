@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0http://127.0.0.1:3002/index.html">
     <title>Hotel Eterna Primavera</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Cabeza de la pagina -->
     <header class="header">
-        <h1>Hotel Eterna Primavera</h1>
-        <nav>
-            <img src="./img/logo.png" width="50px" alt="Logo del hotel" class="banner">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#habitaciones">Habitaciones</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <div class="header-container">
+            <img src="./img/logo.png" alt="Logo del hotel" class="logo">
+            <nav class="main-nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+        </div>
     </header>
     <!-- Cuerpo de la pagina -->
     <main>
         <section id="inicio">
-            <img src="./img/banner.png" style="width: 100%;" alt="Imagen del hotel">
+            <img src="./img/banner2.png" alt="Imagen del hotel" class="banner-img">
+            <div class="banner-contenido">
+                <h2>Bienvenido al Hotel Eterna Primavera</h2>
+                <p>Disfruta de una experiencia única de confort, lujo y naturaleza.</p>
+                <a href="#reservas" class="banner-btn">Reservar ahora</a>
+            </div>
         </section>
         <!-- Sección de servicios -->
          <section id="servicios">
-            <h2>Nuestros servicios</h2 >
+            <h2>Nuestros servicios</h2>
             <div class="carrusel-servicios">
                 <button class="carrusel-btn" id="prev">&#10094;</button>
                 <div class="carrusel-imagenes">
@@ -52,8 +60,9 @@
          </section>
 
         <!-- Sección de habitaciones -->
-         <section id="rooms">
-
+         <section id="habitaciones">
+            <h2>Habitaciones</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusantium similique eum a dolore, facilis obcaecati sint nemo provident distinctio hic explicabo, laboriosam dolor. Tempore magni repudiandae unde! Quasi, fugiat.</p>
          </section>
 
         <!-- Sección de resevas -->
@@ -69,11 +78,21 @@
             </form>
         </section>
 
-    </main>
+        <section id="sobre-nosotros">
+            <h2>Nosotros</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusantium similique eum a dolore, facilis obcaecati sint nemo provident distinctio hic explicabo, laboriosam dolor. Tempore magni repudiandae unde! Quasi, fugiat.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusantium similique eum a dolore, facilis obcaecati sint nemo provident distinctio hic explicabo, laboriosam dolor. Tempore magni repudiandae unde! Quasi, fugiat.</p>
 
+        </section>
+    </main>
+    <!-- Pie de pagina -->
     <footer>
         <p>&copy; 2023 Hotel Eterna Primavera. Todos los derechos reservados.</p>
-    </footer> 
+    </footer>
+</body>
 </html>
 
 

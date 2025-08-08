@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Eterna Primavera</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Encabezado -->
     <header class="header">
-        <h1>Hotel Eterna Primavera</h1>
-        <nav>
-            <img src="./img/logo.png" width="50px" alt="Logo del hotel" class="banner">
-            <a href="index.html">Inicio</a>
-            <a href="multimedia.html">Multimedia</a>
-            <a href="informacion.html">Información</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="https://maps.google.com" target="_blank">Ubicación</a> <!-- enlace externo -->
-        </nav>
+        <div class="header-container">
+            <img src="./img/logo.png" alt="Logo del hotel" class="logo">
+            <nav class="main-nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+        </div>
     </header>
 
     <!-- Contenido principal -->
     <main>
         <!-- Sección de bienvenida -->
         <section id="inicio">
-            <img src="./img/banner.png" style="width: 100%;" alt="Imagen del hotel">
-            <h2>Bienvenidos al paraíso</h2>
-            <p>Descubre un lugar lleno de paz, naturaleza y comodidad. Nuestro hotel ofrece una experiencia única en el corazón de la eterna primavera.</p>
-            <ul>
-                <li>Habitaciones confortables con vista a la montaña</li>
-                <li>Restaurante gourmet con sabores locales</li>
-                <li>Áreas de recreación y bienestar</li>
-            </ul>
+            <img src="./img/banner2.png" alt="Imagen del hotel" class="banner-img">
+            <div class="banner-contenido">
+                <h2>Bienvenido al Hotel Eterna Primavera</h2>
+                <p>Disfruta de una experiencia única de confort, lujo y naturaleza.</p>
+                <a href="#reservas" class="banner-btn">Reservar ahora</a>
+            </div>
         </section>
 
         <!-- Sección de servicios -->
         <section id="servicios">
+
             <h2>Nuestros servicios</h2>
             <div class="carrusel-servicios">
                 <button class="carrusel-btn" id="prev">&#10094;</button>
@@ -61,8 +62,13 @@
                 <button class="carrusel-btn" id="next">&#10095;</button>
             </div>
         </section>
+        <!-- Sección de habitaciones -->
+         <section id="habitaciones">
+            <h2>Habitaciones</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusantium similique eum a dolore, facilis obcaecati sint nemo provident distinctio hic explicabo, laboriosam dolor. Tempore magni repudiandae unde! Quasi, fugiat.</p>
+         </section>
 
-        <!-- Sección de reservas -->
+        <!-- Sección de resevas -->
         <section id="reservas">
             <h2>Reservas</h2>
             <p>Realiza tu reserva en línea de manera rápida y segura.</p>
@@ -88,6 +94,7 @@
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2025 Hotel Eterna Primavera. Todos los derechos reservados.</p>
+
     </footer>
 </body>
 </html>

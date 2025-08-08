@@ -1,45 +1,260 @@
+/* Header */
+.header {
+    background: rgba(30, 30, 30, 0.55);
+    color: #fff;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    min-height: 70px;
+    box-shadow: 0 2px 8px #223;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 32px 0 32px;
+    position: relative;
+}
+.header.scrolled {
+    background: rgba(30, 30, 30, 0.85);
+}
+
+.logo {
+    margin-right: 32px;
+    height: 40px;
+    width: auto;
+}
+
+.main-nav {
+    display: flex;
+    gap: 40px;
+    flex: 1;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: #fff;
+    text-shadow: 0 2px 8px #000;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: #ffd700;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 0 16px 0;
+    letter-spacing: 1px;
+}
+
+/* Banner de inicio */
+
+.banner-inicio, #inicio {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: brightness(0.7);
+    margin: 0;
+    padding: 0;
+}
+
+.banner-contenido {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-contenido h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 0 2px 8px #000;
+}
+
+.banner-contenido p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 8px #000;
+}
+
+.banner-btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #222;
+    padding: 0.8em 2em;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px #2224;
+}
+.banner-btn:hover {
+    background: #fff;
+    color: #222;
+}
+
 /* Carrusel de servicios */
 .carrusel-servicios {
     display: flex;
     align-items: center;
-    justify-items: center;
-    gap: 10px;
-    margin: 20px 0;
+    justify-content: center;
+    width: 100vw;
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 40px auto;
 }
 .carrusel-imagenes {
-    width: 300px;
-    height: 220px;
-    overflow: hidden;
-    position: relative;
-}
-.servicio {
-    display: none;
-    flex-direction: center;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    min-width: 320px;
+    max-width: 900px;
+    height: 300px;
+    position: relative;
+    overflow: visible;
+}
+
+.servicio {
+    display: flex;
+    opacity: 0;
+    filter: blur(4px) grayscale(60%);
+    transform: scale(0.8);
+    transition: 
+        opacitu 0.4s,
+        fiter 0.4s,
+        transform 0.4s
+        left 0.4s;
     position: absolute;
-    width: 100%;
+    left: 50%;
+    top: 50%;
+    pointer-events: none;
+    z-index: 1;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 60%;
     height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translate(-50%, -50%) scale(0.8);
 }
 .servicio img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #222;
 }
+
+.servicio p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 16px 0 12px 0;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 16px 16px;
+    pointer-events: none;
+}
+
 .servicio.activo {
-    display: flex;
+    opacity: 1;
+    filter: none;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 2;
+    pointer-events: auto;
 }
+
+.servicio.anterior {
+    opacity: 0.6;
+    filter: blur(3px) grayscale(60%);
+    left: 20%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.85);
+}
+
+.servicio.siguiente {
+    opacity: 0.6;
+    filter: blur(3px) grayscale(60%);
+    left: 80%;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0.85);
+}
+
 .carrusel-btn {
     background: #eee;
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
     transition: background 0.2s;
+    z-index: 10;
+    position: relative;
+    margin: 0 16px;
 }
 .carrusel-btn:hover {
     background: #ccc;
+}
+
+#servicios h2, #reservas h2, #sobre-nosotros h2, 
+#habitaciones h2, #contacto h2 {
+    text-align: center;
+}
+
+#reservas p, #sobre-nosotros p, #habitaciones p,
+#contacto p, #reservas form {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
 }

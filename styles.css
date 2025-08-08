@@ -32,7 +32,10 @@
     width: auto;
 }
 
-.main-nav {
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 40px;
     flex: 1;
@@ -54,6 +57,11 @@
 .main-nav a:hover,
 .main-nav a:focus {
     color: #ffd700;
+}
+
+.main-nav li {
+    margin: 0;
+    padding: 0;
 }
 
 .header h1 {

@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0http://127.0.0.1:3002/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Eterna Primavera</title>
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Cabeza de la pagina -->
+    <!-- Encabezado -->
     <header class="header">
         <div class="header-container">
             <img src="./img/logo.png" alt="Logo del hotel" class="logo">
@@ -25,8 +25,10 @@
 
         </div>
     </header>
-    <!-- Cuerpo de la pagina -->
+
+    <!-- Contenido principal -->
     <main>
+        <!-- Sección de bienvenida -->
         <section id="inicio">
             <img src="./img/banner2.png" alt="Imagen del hotel" class="banner-img">
             <div class="banner-contenido">
@@ -35,14 +37,16 @@
                 <a href="#reservas" class="banner-btn">Reservar ahora</a>
             </div>
         </section>
+
         <!-- Sección de servicios -->
-         <section id="servicios">
+        <section id="servicios">
+
             <h2>Nuestros servicios</h2>
             <div class="carrusel-servicios">
                 <button class="carrusel-btn" id="prev">&#10094;</button>
                 <div class="carrusel-imagenes">
                     <div class="servicio activo">
-                        <img src="./img/servicios/restaurante.png" alt="restaurante">
+                        <img src="./img/servicios/restaurante.png" alt="Restaurante">
                         <p>Restaurante mirador</p>
                     </div>
                     <div class="servicio">
@@ -50,18 +54,17 @@
                         <p>Gimnasio</p>
                     </div>
                     <div class="servicio">
-                        <img src="./img/servicios/salon_eventos.png" alt="Salon de eventos">
+                        <img src="./img/servicios/salon_eventos.png" alt="Salón de eventos">
                         <p>Salón de eventos</p>
                     </div>
                     <div class="servicio">
-                        <img src="./img/servicios/jacuzzi.png" alt="jacuzzi">
+                        <img src="./img/servicios/jacuzzi.png" alt="Jacuzzi">
                         <p>Jacuzzi</p>
                     </div>
                 </div>
                 <button class="carrusel-btn" id="next">&#10095;</button>
             </div>
-         </section>
-
+        </section>
         <!-- Sección de habitaciones -->
          <section id="habitaciones">
             <h2>Habitaciones</h2>
@@ -75,27 +78,26 @@
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
+
                 <label for="fecha">Fecha de llegada:</label>
                 <input type="date" id="fecha" name="fecha" required>
+
+                <label for="personas">Número de personas:</label>
+                <input type="number" id="personas" name="personas" min="1" max="10">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="reset">Restablecer</button>
                 <button type="submit">Reservar</button>
             </form>
         </section>
-
-        <section id="sobre-nosotros">
-            <h2>Nosotros</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusantium similique eum a dolore, facilis obcaecati sint nemo provident distinctio hic explicabo, laboriosam dolor. Tempore magni repudiandae unde! Quasi, fugiat.</p>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusantium similique eum a dolore, facilis obcaecati sint nemo provident distinctio hic explicabo, laboriosam dolor. Tempore magni repudiandae unde! Quasi, fugiat.</p>
-
-        </section>
     </main>
-    <!-- Pie de pagina -->
+
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2023 Hotel Eterna Primavera. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Hotel Eterna Primavera. Todos los derechos reservados.</p>
+
     </footer>
 </body>
 </html>
-
-

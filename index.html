@@ -7,20 +7,17 @@
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/script.js" defer></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
 <body>
     <!-- Encabezado -->
     <header class="header">
         <div class="header-container">
-            <img src="./img/iconoBlanco.png" alt="Logo del hotel" class="icono">
+            <img src="./img/marca/iconoBlanco.png" alt="Logo del hotel" class="icono">
             <nav class="main-nav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#habitaciones">Habitaciones</a></li>
-                    <li><a href="#sobre-nosotros">Nosotros</a></li>
+                    <li><a href="sobreNosotros.html">Nosotros</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -35,14 +32,13 @@
             <div class="banner-contenido">
                 <h2>Bienvenido al Hotel Eterna Primavera</h2>
                 <p>Disfruta de una experiencia única de confort, lujo y naturaleza.</p>
-                <a href="#reservas" class="banner-btn">Reservar ahora</a>
+                <a href="reservas.html" class="banner-btn">Reservar ahora</a>
             </div>
         </section>
 
         <!-- Sección de servicios -->
         <section id="servicios">
-
-            <h2>Nuestros servicios</h2>
+            <h1>Nuestros servicios</h1>
             <div class="carrusel-servicios">
                 <button class="carrusel-btn" id="prev">&#10094;</button>
                 <div class="carrusel-imagenes">
@@ -68,31 +64,36 @@
         </section>
         <!-- Sección de habitaciones -->
          <section id="habitaciones">
-            <h2>Habitaciones</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque accusantium similique eum a dolore, facilis obcaecati sint nemo provident distinctio hic explicabo, laboriosam dolor. Tempore magni repudiandae unde! Quasi, fugiat.</p>
+            <h1>Habitaciones</h1>
+            <div class="grid">
+                <div class="habitacion">
+                    <a href="habitaciones.html">
+                        <img src="img/habitaciones/RoomEstandar.png" alt="Habitación Estándar">
+                    </a>
+                    <p>Habitación Estándar</p>
+                </div>
+                <div class="habitacion">
+                    <a href="habitaciones.html">
+                        <img src="img/habitaciones/SuiteJunior.png" alt="Suite Junior">
+                    </a>
+                    <p>Suite Junior</p>
+                </div>
+                <div class="habitacion">
+                    <a href="habitaciones.html">
+                        <img src="img/habitaciones/SuitePanoramica.png" alt="Suite Panorámica">
+                    </a>
+                    <p>Suite Panorámica</p>
+                </div>
+                <div class="habitacion">
+                    <a href="habitaciones.html">
+                        <img src="img/habitaciones/HabitacionFamiliar.png" alt="Habitación Familiar">
+                    </a>
+                    <p>Habitación Familiar</p>
+                </div>
+            </div>
+
          </section>
 
-        <!-- Sección de resevas -->
-        <section id="reservas">
-            <h2>Reservas</h2>
-            <p>Realiza tu reserva en línea de manera rápida y segura.</p>
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="fecha">Fecha de llegada:</label>
-                <input type="date" id="fecha" name="fecha" required>
-
-                <label for="personas">Número de personas:</label>
-                <input type="number" id="personas" name="personas" min="1" max="10">
-
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="reset">Restablecer</button>
-                <button type="submit">Reservar</button>
-            </form>
-        </section>
     </main>
 
     <!-- Pie de página -->

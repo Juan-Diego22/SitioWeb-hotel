@@ -4,6 +4,11 @@
     font-family: Arial, sans-serif;
 }
 
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Header */
 .header {
@@ -160,11 +165,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    min-height: 90vh;
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
     position: relative;
     overflow: hidden;
-    margin: 0 auto;
+    min-width: 900px;
 }
 .carrusel-imagenes {
     display: flex;
@@ -172,28 +178,18 @@
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    max-width: 900px;
-    height: 400px;
+    height: 100%;
     position: relative;
     overflow: visible;
 }
 
 #servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
     background-color: #e7e7e7;
+    padding-top: 130px;
+    padding-bottom: 80px;
+    text-align: center;
 }
 
-#habitaciones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 110vh; 
-}
 
 .servicio {
     display: flex;
@@ -215,6 +211,7 @@
     box-shadow: none;
     width: 60%;
     height: 100%;
+    aspect-ratio: 4/3;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
@@ -283,32 +280,47 @@
     background: #ccc;
 }
 
-#servicios h1, #habitaciones h1, #contacto h1 {
+#servicios h1, #contacto h1, #habitaciones h1 {
     text-align: center;
-    margin-top:130px;
-    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
-
 /* Sección de habitaciones */
+#habitaciones {
+    text-align: center;
+    padding: 80px 20px;
+}
+
 .habitaciones {
     text-align: center;
-    padding: 40px;
+    padding: 80px 20px;
+    background-color: #f0f2f5;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    max-width: 900px;
     margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.habitacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.habitacion a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
 }
 
 .habitacion {
     width: 100%;
-    aspect-ratio: 1/1; 
     overflow: hidden;
-    border-radius: 18px;
+    border-radius: 15px;
     position: relative;
     background: #fff;
     margin-top: 35px;
@@ -317,10 +329,9 @@
 
 .habitacion img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover; 
     display: block;
-    border-radius: 18px;
 }
 
 .habitacion p {
@@ -328,13 +339,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-bottom: 18px;
+    padding: 10px;
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
-    text-shadow: 0 2px 8px #000a;
     font-weight: 500;
-    letter-spacing: 0.5px;
     pointer-events: none;
     z-index: 2;
     background: linear-gradient(0deg, #0007 60%, transparent 100%);

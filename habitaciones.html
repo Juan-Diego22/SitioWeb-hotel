@@ -4,8 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HABITACIONES</title>
+    <link rel="stylesheet" href="css/habitaciones.css">
+    <script src="js/habitaciones.js" defer></script>
 </head>
 <body>
-    
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="header-container">
+            <img src="./img/marca/iconoBlanco.png" alt="Logo del hotel" class="icono">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#habitaciones">Habitaciones</a></li>
+                    <li><a href="sobreNosotros.html">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Secciiones de las habitaciones -->
+    <!-- <main class="room-container">
+        <!-- Habitación Estándar 
+        <section class="room-content" id="room1">
+            <div class="room-carrusel">
+                <button class="carrusel-navprev-btn">&lt;</button>
+                <div class="carrusel-imagenes">
+                    <div class="room-img">
+                        <img src="img/habitaciones/RoomEstandar.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/RoomEstandar2.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/RoomEstandar3.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/RoomEstandar4.png" alt="">
+                    </div>
+                </div>
+                <button class="carrusel-navnext-btn">&gt;</button>            
+            </div>
+
+            <div class="room-details">
+                <h1 class="room-name">Habitación Estándar</h1>
+                <p class="room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe neque aliquam veritatis asperiores iure! Maiores id ipsam voluptatem ducimus obcaecati, temporibus aspernatur sed consectetur laborum, quaerat illum, maxime accusamus error!</p>
+                <button class="reserva-btn">RESERVAR</button>    
+            </div>
+        </section>
+
+        <!-- Suite Junior 
+        <section class="room-content" id="room2">
+            <div class="room-carrusel">
+                <button class="carrusel-navprev-btn">&lt;</button>
+                <div class="carrusel-imagenes">
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuiteJunior.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuiteJunior2.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuiteJunior3.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuiteJunior4.png" alt="">
+                    </div>
+                </div>
+                <button class="carrusel-navnext-btn">&gt;</button>
+            </div>
+
+            <div class="room-details">
+                <h1 class="room-name">Suite Junior</h1>
+                <p class="room-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis vero illo voluptatibus veritatis neque nesciunt minus odio porro debitis sequi nulla, id voluptate nisi cupiditate eaque, error unde ut.</p>
+                <button class="reserva-btn">RESERVAR</button>    
+            </div>
+        </section>
+
+        <!-- Suite Panoramica 
+        <section class="room-content" id="room3">
+            <div class="room-carrusel">
+                <button class="carrusel-navprev-btn">&lt;</button>
+                <div class="carrusel-imagenes">
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuitePanoramica.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuitePanoramica2.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuitePanoramica3.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/SuitePanoramica4.png" alt="">
+                    </div>
+                </div>
+                <button class="carrusel-navnext-btn">&gt;</button>
+            </div>
+
+            <div class="room-details">
+                <h1 class="room-name">Suite Panorámica</h1>
+                <p class="room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus aspernatur architecto illum enim dolorem nulla animi fugit quia, reiciendis voluptas eaque ratione numquam quae illo quo eveniet minima consequuntur?</p>
+                <button class="reserva-btn">RESERVAR</button>    
+            </div>
+        </section>
+
+        <!-- Habitación Familiar 
+        <section class="room-content" id="room4">
+            <div class="room-carrusel">
+                <button class="carrusel-navprev-btn">&lt;</button>
+                <div class="carrusel-imagenes">
+                    <div class="room-img">
+                        <img src="img/habitaciones/HabitacionFamiliar.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/HabitacionFamiliar2.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/HabitacionFamiliar3.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/HabitacionFamiliar4.png" alt="">
+                    </div>
+                    <div class="room-img">
+                        <img src="img/habitaciones/HabitacionFamiliar5.png" alt="">
+                    </div>
+                </div>
+                <button class="carrusel-navnext-btn">&gt;</button>
+            </div>
+
+            <div class="room-details">
+                <h1 class="room-name">Habitación Familiar</h1>
+                <p class="room-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quidem est laboriosam nulla, ab, assumenda officia dolore magnam inventore cum corporis iusto commodi id dolores dolor in. Nostrum, culpa tempore?</p>
+                <button class="reserva-btn">RESERVAR</button>    
+            </div>
+        </section>
+    </main> -->
+    <main>
+        <div class="habitacion-principal">
+            <div class="carrusel-y-detalles">
+                <div class="room-carrusel">
+                    <button class="carrusel-navprev-btn">&lt;</button>
+                    <div class="carrusel-imagenes">
+                        <div class="room-img"><img src="img/habitaciones/RoomEstandar.png" alt="Habitación Estándar 1"></div>
+                        <div class="room-img"><img src="img/habitaciones/RoomEstandar2.png" alt="Habitación Estándar 2"></div>
+                        <div class="room-img"><img src="img/habitaciones/RoomEstandar3.png" alt="Habitación Estándar 3"></div>
+                        <div class="room-img"><img src="img/habitaciones/RoomEstandar4.png" alt="Habitación Estándar 4"></div>
+                    </div>
+                    <button class="carrusel-navnext-btn">&gt;</button>            
+                </div>
+                <div class="room-details">
+                    <h1 class="room-name">Habitación Estándar</h1>
+                    <p class="room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe neque aliquam veritatis asperiores iure! Maiores id ipsam voluptatem ducimus obcaecati, temporibus aspernatur sed consectetur laborum, quaerat illum, maxime accusamus error!</p>
+                    <div class="amenidades-link">INSTALACIONES</div>
+                    <button class="reserva-btn">RESERVAR</button>
+                </div>
+            </div>
+
+            <aside class="amenities-box">
+                <h2 class="amenities-title">TODO LO QUE TIENE LA HABITACIÓN</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-utensils"></i> Comida y bebida</h3><ul><li><i class="fas fa-check"></i> Bar</li><li><i class="fas fa-check"></i> Servicio de habitaciones</li></ul></div>
+                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-spa"></i> Piscina y bienestar</h3><ul><li><i class="fas fa-check"></i> Bañera de hidromasaje / jacuzzi</li></ul></div>
+                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-concierge-bell"></i> Servicios de recepción</h3><ul><li><i class="fas fa-check"></i> Recepción 24 horas</li></ul></div>
+                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-cogs"></i> Varios</h3><ul><li><i class="fas fa-check"></i> Habitaciones familiares</li><li><i class="fas fa-check"></i> Habitaciones sin humo</li></ul></div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="otras-habitaciones-container">
+            <h2>Otras habitaciones que te pueden interesar</h2>
+            <div class="habitaciones-grid">
+                <a href="suite-junior.html" class="habitacion-card">
+                    <img src="img/habitaciones/SuiteJunior.png" alt="Suite Junior">
+                    <div class="card-info">
+                        <h3>Suite Junior</h3>
+                        <p>Una habitación de lujo para una estancia inolvidable.</p>
+                        <span class="ver-mas">VER MÁS</span>
+                    </div>
+                </a>
+                <a href="suite-panoramica.html" class="habitacion-card">
+                    <img src="img/habitaciones/SuitePanoramica.png" alt="Suite Panorámica">
+                    <div class="card-info">
+                        <h3>Suite Panorámica</h3>
+                        <p>Disfruta de las mejores vistas de la ciudad.</p>
+                        <span class="ver-mas">VER MÁS</span>
+                    </div>
+                </a>
+                <a href="habitacion-familiar.html" class="habitacion-card">
+                    <img src="img/habitaciones/HabitacionFamiliar.png" alt="Habitación Familiar">
+                    <div class="card-info">
+                        <h3>Habitación Familiar</h3>
+                        <p>Espacio ideal para toda la familia.</p>
+                        <span class="ver-mas">VER MÁS</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

@@ -4,12 +4,6 @@
     font-family: Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Header */
 .header {
     background: rgba(30, 30, 30, 0.55);
@@ -75,7 +69,7 @@
 
 .main-nav a:hover,
 .main-nav a:focus {
-    color: #CFB53B;
+    color: #8A4A3C;
 }
 
 .main-nav li {
@@ -166,30 +160,27 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    height: 400px;
+    height: auto;
     position: relative;
     overflow: hidden;
-    min-width: 900px;
 }
 .carrusel-imagenes {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-width: 320px;
-    height: 100%;
+    min-height: 300px;
     position: relative;
     overflow: visible;
 }
 
 #servicios {
     background-color: #e7e7e7;
-    padding-top: 130px;
-    padding-bottom: 80px;
+    padding: 80px 20px;
     text-align: center;
 }
-
 
 .servicio {
     display: flex;
@@ -197,32 +188,31 @@
     filter: blur(4px) grayscale(60%);
     transform: scale(0.8);
     transition: 
-        opacitu 0.4s,
-        fiter 0.4s,
-        transform 0.4s
-        left 0.4s;
+        opacity 0.4s,
+        filter 0.4s,
+        transform 0.4s;
     position: absolute;
     left: 50%;
     top: 50%;
     pointer-events: none;
     z-index: 1;
-    background: none;
-    border-radius: 0;
-    box-shadow: none;
+    box-shadow: 0 2px 26px #233;
     width: 60%;
-    height: 100%;
-    aspect-ratio: 4/3;
+    max-width: 500px;
+    height: auto;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     transform: translate(-50%, -50%) scale(0.8);
+    border-radius: 16px;
+    overflow: hidden;
 }
+
 .servicio img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0 2px 16px #222;
 }
 
 .servicio p {
@@ -289,6 +279,7 @@
 #habitaciones {
     text-align: center;
     padding: 80px 20px;
+    background-color: #f0f2f5;
 }
 
 .habitaciones {
@@ -299,37 +290,35 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin: 0 auto;
     max-width: 1200px;
 }
 
+.habitacion {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #2223; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 .habitacion:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .habitacion a {
     text-decoration: none;
     display: block;
-    color: inherit;
-}
-
-.habitacion {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 15px;
-    position: relative;
-    background: #fff;
-    margin-top: 35px;
-    box-shadow: 0 2px 8px #2223;
+    color: #fff;
 }
 
 .habitacion img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover; 
     display: block;
 }
@@ -347,4 +336,119 @@
     pointer-events: none;
     z-index: 2;
     background: linear-gradient(0deg, #0007 60%, transparent 100%);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #8A4A3C; 
+    color: #ffffff;
+    padding: 2rem 1rem;
+    width: auto;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.footer-marcas {
+    text-align: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+ .footer-marcas img {
+    height: 100px;
+    width: auto;
+    margin: 0;
+    z-index: 2;
+}
+
+/* Estilos para las redes sociales y enlaces */
+.footer-rrss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.social-rrss-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.legal-info p {
+    margin: 0 0 0.5rem 0; 
+    text-align: center;
+}
+
+.social-rrss-links a {
+    color: #ffffff;
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-rrss-links a:hover {
+    color: #e0e0e0;
+    transform: scale(1.2);
+}
+
+/* Estilos para el texto legal */
+.legal-info {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-info a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.legal-info a:hover {
+    color: #e0e0e0;
+}
+
+@media (min-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: start;
+    }
+    .footer-rrss {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-marcas {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .legal-info{
+        text-align: right;
+        font-size: 1rem;
+    }
+    .social-rrss-links {
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 1rem;
+    }
 }

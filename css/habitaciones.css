@@ -271,7 +271,7 @@ body {
     font-size: 0.8rem;
 }
 
-/* --- Responsividad para móviles --- */
+/* Responsividad para móviles */
 @media (max-width: 768px) {
     .carrusel-y-detalles {
         flex-direction: column;

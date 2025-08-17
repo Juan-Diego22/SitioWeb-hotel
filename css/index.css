@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
@@ -11,7 +12,7 @@
     padding: 0;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     min-height: 70px;
     box-shadow: 0 2px 8px #223;
     backdrop-filter: blur(6px);
@@ -21,27 +22,30 @@
 
 .header-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 16px 32px 0 32px;
+    padding: 10px 20px;
     position: relative;
 }
+
 .header.scrolled {
     background: rgba(30, 30, 30, 0.85);
 }
 
 .icono {
-    position: absolute;
-    left: 32px;
-    top: 10px;
-    height: 60px;
+    height: 50px;
     width: auto;
-    margin: 0;
-    top: 10px;
     z-index: 2;
-    transition: left 0.3s, top 0.3s, height 0.3s;
+    transition: height 0.3s;
+}
+
+.menu-alt {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
 }
 
 .main-nav ul {
@@ -49,21 +53,20 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 40px;
-    flex: 1;
-    justify-content: center;
-    margin-top: 12px;
+    gap: 30px;
+    align-items: center;
 }
 
 .main-nav a {
     color: #fff;
     text-shadow: 0 2px 8px #000;
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 8px 0;
-    transition: color 0.2s;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
     position: relative;
 }
 
@@ -87,7 +90,7 @@
     letter-spacing: 1px;
 }
 
-/* Banner de inicio */
+/* BANNER */
 .banner-inicio, #inicio {
     position: relative;
     width: 100vw;
@@ -177,14 +180,23 @@
 }
 
 #servicios {
-    background-color: #e7e7e7;
-    padding: 80px 20px;
+    background-color: #cfccc6;
+    padding: 100px 20px;
     text-align: center;
+}
+
+.intro-servicios {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    padding: 0 20px;
 }
 
 .servicio {
     display: flex;
-    opacity: 0;
     filter: blur(4px) grayscale(60%);
     transform: scale(0.8);
     transition: 
@@ -270,16 +282,27 @@
     background: #ccc;
 }
 
-#servicios h1, #contacto h1, #habitaciones h1 {
-    text-align: center;
-    margin-bottom: 30px;
+#habitaciones h1, #servicios h1 {
+    margin-top: -20px; 
+    margin-bottom: 20px; 
+    font-size: 2.2rem;
 }
 
-/* Sección de habitaciones */
+/* SECCIÓN HABITACIONES */
 #habitaciones {
     text-align: center;
-    padding: 80px 20px;
-    background-color: #f0f2f5;
+    padding: 100px 40px 80px 40px; 
+    background-color: #d4d6d8; 
+}
+
+.intro-habitaciones {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    padding: 0 20px;
 }
 
 .habitaciones {
@@ -291,7 +314,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 16px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -339,11 +362,10 @@
 }
 
 /* FOOTER */
-
 .footer {
     background-color: #8A4A3C; 
     color: #ffffff;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     width: auto;
 }
 .footer-container {
@@ -351,7 +373,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
 }
@@ -363,13 +385,12 @@
 }
 
  .footer-marcas img {
-    height: 100px;
+    height: 80px;
     width: auto;
     margin: 0;
     z-index: 2;
 }
 
-/* Estilos para las redes sociales y enlaces */
 .footer-rrss {
     display: flex;
     flex-direction: column;
@@ -406,7 +427,6 @@
     transform: scale(1.2);
 }
 
-/* Estilos para el texto legal */
 .legal-info {
     text-align: center;
     font-size: 0.9rem;
@@ -425,30 +445,68 @@
     color: #e0e0e0;
 }
 
-@media (min-width: 768px) {
+/* Menú desplegable */
+#menu_bar {
+    display: none;
+}
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        align-items: center;
-        justify-content: start;
+.menu-alt {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .menu-alt {
+        display: block;
     }
-    .footer-rrss {
+    .header-container {
+        justify-content: space-between;
+    }
+    .main-nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(95, 95, 95, 0.7);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0;
+    }
+    #menu_bar:checked ~ .header .main-nav {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 769px) {
+    .header-container {
         justify-content: center;
+    }
+    .menu-alt {
+        display: none;
+    }
+    .main-nav {
+        margin-left: auto;
+        transform: none;
+        background: none;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+    .main-nav ul {
+        flex-direction: row;
+        gap: 30px;
+        padding: 0;
         align-items: center;
+    }
+    .main-nav a {
+        padding: 10px 15px;
         text-align: center;
-    }
-    .footer-marcas {
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .legal-info{
-        text-align: right;
-        font-size: 1rem;
-    }
-    .social-rrss-links {
-        justify-content: center;
-        gap: 3rem;
-        margin-bottom: 1rem;
+        border-radius: 5px;
     }
 }

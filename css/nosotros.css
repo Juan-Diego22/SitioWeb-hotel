@@ -4,14 +4,13 @@
     font-family: Arial, sans-serif;
 }
 
-/* Header */
 .header {
     background: rgba(30, 30, 30, 0.55);
     color: #fff;
     padding: 0;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     min-height: 70px;
     box-shadow: 0 2px 8px #223;
     backdrop-filter: blur(6px);
@@ -21,27 +20,38 @@
 
 .header-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 16px 32px 0 32px;
+    padding: 10px 20px;
     position: relative;
 }
+
 .header.scrolled {
-    background: rgba(30, 30, 30, 0.85);
+    background: rgba(30, 30, 30, 0.75);
 }
 
 .icono {
-    position: absolute;
-    left: 32px;
-    top: 10px;
-    height: 60px;
+    height: 50px;
     width: auto;
-    margin: 0;
-    top: 10px;
     z-index: 2;
-    transition: left 0.3s, top 0.3s, height 0.3s;
+    transition: height 0.3s;
+    margin-right: 24px;
+}
+
+.menu-alt {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.main-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .main-nav ul {
@@ -49,27 +59,26 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 40px;
-    flex: 1;
-    justify-content: center;
-    margin-top: 12px;
+    gap: 30px;
+    align-items: center;
 }
 
 .main-nav a {
     color: #fff;
     text-shadow: 0 2px 8px #000;
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 8px 0;
-    transition: color 0.2s;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
     position: relative;
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
-    color: #CFB53B;
+    color: #8A4A3C;
 }
 
 .main-nav li {
@@ -272,10 +281,6 @@
   font-size: 1.05em;
 }
 
-
-
-
-
 /* ===== FOOTER ===== */
 .footer {
     background-color: #8A4A3C; 
@@ -373,6 +378,7 @@
     color: #fff;
     font-size: 1.5rem;
 }
+
 @media (max-width: 768px) {
     .menu-alt {
         display: block;

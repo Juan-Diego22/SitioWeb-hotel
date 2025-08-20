@@ -6,133 +6,35 @@
     <title>HABITACIONES</title>
     <link rel="stylesheet" href="css/habitaciones.css">
     <script src="js/habitaciones.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
 </head>
 <body>
     <!-- Encabezado -->
+    <input type="checkbox" id="menu_bar">
     <header class="header">
         <div class="header-container">
             <img src="./img/marca/iconoBlanco.png" alt="Logo del hotel" class="icono">
+            <label for="menu_bar" class="menu-alt">
+                <i class="fa fa-bars"></i>
+            </label>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="index.html#servicios">Servicios</a></li>
                     <li><a href="index.html#habitaciones">Habitaciones</a></li>
                     <li><a href="sobreNosotros.html">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Secciiones de las habitaciones -->
-    <!-- <main class="room-container">
-        <!-- Habitación Estándar 
-        <section class="room-content" id="room1">
-            <div class="room-carrusel">
-                <button class="carrusel-navprev-btn">&lt;</button>
-                <div class="carrusel-imagenes">
-                    <div class="room-img">
-                        <img src="img/habitaciones/RoomEstandar.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/RoomEstandar2.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/RoomEstandar3.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/RoomEstandar4.png" alt="">
-                    </div>
-                </div>
-                <button class="carrusel-navnext-btn">&gt;</button>            
-            </div>
-
-            <div class="room-details">
-                <h1 class="room-name">Habitación Estándar</h1>
-                <p class="room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe neque aliquam veritatis asperiores iure! Maiores id ipsam voluptatem ducimus obcaecati, temporibus aspernatur sed consectetur laborum, quaerat illum, maxime accusamus error!</p>
-                <button class="reserva-btn">RESERVAR</button>    
-            </div>
-        </section>
-
-        <!-- Suite Junior 
-        <section class="room-content" id="room2">
-            <div class="room-carrusel">
-                <button class="carrusel-navprev-btn">&lt;</button>
-                <div class="carrusel-imagenes">
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuiteJunior.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuiteJunior2.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuiteJunior3.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuiteJunior4.png" alt="">
-                    </div>
-                </div>
-                <button class="carrusel-navnext-btn">&gt;</button>
-            </div>
-
-            <div class="room-details">
-                <h1 class="room-name">Suite Junior</h1>
-                <p class="room-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis vero illo voluptatibus veritatis neque nesciunt minus odio porro debitis sequi nulla, id voluptate nisi cupiditate eaque, error unde ut.</p>
-                <button class="reserva-btn">RESERVAR</button>    
-            </div>
-        </section>
-
-        <!-- Suite Panoramica 
-        <section class="room-content" id="room3">
-            <div class="room-carrusel">
-                <button class="carrusel-navprev-btn">&lt;</button>
-                <div class="carrusel-imagenes">
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuitePanoramica.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuitePanoramica2.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuitePanoramica3.png" alt="">
-                    </div>
-                    <div class="room-img">
-                        <img src="img/habitaciones/SuitePanoramica4.png" alt="">
-                    </div>
-                </div>
-                <button class="carrusel-navnext-btn">&gt;</button>
-            </div>
-
-            <div class="room-details">
-                <h1 class="room-name">Suite Panorámica</h1>
-                <p class="room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus aspernatur architecto illum enim dolorem nulla animi fugit quia, reiciendis voluptas eaque ratione numquam quae illo quo eveniet minima consequuntur?</p>
-                <button class="reserva-btn">RESERVAR</button>    
-            </div>
-        </section>
-
-        <!-- Habitación Familiar 
-        <section class="room-content" id="room4">
-            <div class="room-carrusel">
-                <button class="carrusel-navprev-btn">&lt;</button>
-                <div class="carrusel-imagenes">
-                    <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar.png" alt=""></div>
-                    <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar2.png" alt=""></div>
-                    <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar3.png" alt=""></div>
-                    <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar4.png" alt=""></div>
-                    <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar5.png" alt=""></div>
-                </div>
-                <button class="carrusel-navnext-btn">&gt;</button>
-            </div>
-
-            <div class="room-details">
-                <h1 class="room-name">Habitación Familiar</h1>
-                <p class="room-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quidem est laboriosam nulla, ab, assumenda officia dolore magnam inventore cum corporis iusto commodi id dolores dolor in. Nostrum, culpa tempore?</p>
-                <button class="reserva-btn">RESERVAR</button>    
-            </div>
-        </section>
-    </main> -->
     <main>
-        <div class="habitacion-principal">
+        <!-- Habitación Estandar -->
+        <section id="room1" class="habitacion-principal">
             <div class="carrusel-y-detalles">
                 <div class="room-carrusel">
                     <button class="carrusel-navprev-btn">&lt;</button>
@@ -146,52 +48,172 @@
                 </div>
                 <div id="room1" class="room-details">
                     <h1 class="room-name">Habitación Estándar</h1>
-                    <p class="room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe neque aliquam veritatis asperiores iure! Maiores id ipsam voluptatem ducimus obcaecati, temporibus aspernatur sed consectetur laborum, quaerat illum, maxime accusamus error!</p>
+                    <p class="room-description">Sería la opción más sencilla, pero aún así manteniendo el estilo rústico. Contaría con acabados en madera y piedra, 
+                        una cama cómoda y un balcón pequeño con vistas a la naturaleza que rodea el hotel. Sería ideal para viajeros que buscan un lugar tranquilo y acogedor.
+                    </p>
                     <div class="amenidades-link">INSTALACIONES</div>
-                    <button class="reserva-btn">RESERVAR</button>
+                    <a href="reservas.html"><button class="reserva-btn">RESERVAR</button></a>
                 </div>
             </div>
 
             <aside class="amenities-box">
                 <h2 class="amenities-title">TODO LO QUE TIENE LA HABITACIÓN</h2>
                 <div class="amenities-grid">
-                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-utensils"></i> Comida y bebida</h3><ul><li><i class="fas fa-check"></i> Bar</li><li><i class="fas fa-check"></i> Servicio de habitaciones</li></ul></div>
-                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-spa"></i> Piscina y bienestar</h3><ul><li><i class="fas fa-check"></i> Bañera de hidromasaje / jacuzzi</li></ul></div>
-                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-concierge-bell"></i> Servicios de recepción</h3><ul><li><i class="fas fa-check"></i> Recepción 24 horas</li></ul></div>
-                    <div class="amenity-category"><h3 class="category-title"><i class="fas fa-cogs"></i> Varios</h3><ul><li><i class="fas fa-check"></i> Habitaciones familiares</li><li><i class="fas fa-check"></i> Habitaciones sin humo</li></ul></div>
+                    <h3 class="tit-categoria"><i class="fas fa-paint-brush"></i> Estilo</h3>
+                    <ul><li><i class="fas fa-check"></i> Rústico con acabados en madera y piedra</li></ul>
+                    <h3 class="tit-categoria"><i class="fas fa-couch"></i> Comodidades</h3>
+                    <ul><li><i class="fas fa-check"></i> Cama cómoda y balcón pequeño</li></ul>
+                    <h3 class="tit-categoria"><i class="fas fa-mountain"></i> Vistas</h3>
+                    <ul><li><i class="fas fa-check"></i> A las montañas y nuraleza</li><li><i class="fas fa-check"></i> Vista a la ciudad de Medellín</li></ul>
                 </div>
             </aside>
-        </div>
+        </section>
 
-        <div class="otras-habitaciones-container">
-            <h2>Otras habitaciones que te pueden interesar</h2>
-            <div class="habitaciones-grid">
-                <a href="" class="habitacion-card">
-                    <img src="img/habitaciones/SuiteJunior.png" alt="Suite Junior">
-                    <div class="card-info">
-                        <h3>Suite Junior</h3>
-                        <p>Una habitación de lujo para una estancia inolvidable.</p>
-                        <span class="ver-mas">VER MÁS</span>
+        <!-- Suite Junior -->
+        <section id="room2" class="habitacion-principal">
+            <div class="carrusel-y-detalles">
+                <div class="room-carrusel">
+                    <button class="carrusel-navprev-btn">&lt;</button>
+                    <div class="carrusel-imagenes">
+                        <div class="room-img"><img src="img/habitaciones/SuiteJunior.png" alt="Habitación Estándar 1"></div>
+                        <div class="room-img"><img src="img/habitaciones/SuiteJunior2.png" alt="Habitación Estándar 2"></div>
+                        <div class="room-img"><img src="img/habitaciones/SuiteJunior3.png" alt="Habitación Estándar 3"></div>
+                        <div class="room-img"><img src="img/habitaciones/SuiteJunior4.png" alt="Habitación Estándar 4"></div>
                     </div>
-                </a>
-                <a href="suite-panoramica.html" class="habitacion-card">
-                    <img src="img/habitaciones/SuitePanoramica.png" alt="Suite Panorámica">
-                    <div class="card-info">
-                        <h3>Suite Panorámica</h3>
-                        <p>Disfruta de las mejores vistas de la ciudad.</p>
-                        <span class="ver-mas">VER MÁS</span>
-                    </div>
-                </a>
-                <a href="habitacion-familiar.html" class="habitacion-card">
-                    <img src="img/habitaciones/HabitacionFamiliar.png" alt="Habitación Familiar">
-                    <div class="card-info">
-                        <h3>Habitación Familiar</h3>
-                        <p>Espacio ideal para toda la familia.</p>
-                        <span class="ver-mas">VER MÁS</span>
-                    </div>
-                </a>
+                    <button class="carrusel-navnext-btn">&gt;</button>            
+                </div>
+                <div id="room2" class="room-details">
+                    <h1 class="room-name">Suite Junior</h1>
+                    <p class="room-description">Una habitación más amplia con una pequeña sala de estar. Lo más destacado sería un balcón privado amueblado, 
+                        con vistas panorámicas a la ciudad de Medellín. Perfecta para parejas que buscan más espacio y un lugar íntimo para disfrutar del paisaje.
+                    </p>
+                    <div class="amenidades-link">INSTALACIONES</div>
+                    <a href="reservas.html"><button class="reserva-btn">RESERVAR</button></a>
+                </div>
             </div>
+
+            <aside class="amenities-box">
+                <h2 class="amenities-title">TODO LO QUE TIENE LA HABITACIÓN</h2>
+                <div class="amenities-grid">
+                    <h3 class="category-title"><i class="fas fa-paint-brush"></i> Espacio</h3>
+                    <ul><li><i class="fas fa-check"></i> Con una pequeña sala de estar</li></ul>
+                    <h3 class="category-title"><i class="fas fa-couch"></i> Comodidades</h3>
+                    <ul><li><i class="fas fa-check"></i> Balc´on privado amueblado</li></ul>
+                    <h3 class="category-title"><i class="fas fa-city"></i> Vistas</h3>
+                    <ul><li><i class="fas fa-check"></i> A las montañas</li><i class="fas fa-check"></i> A la ciudad de Medellín</li></ul>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Suite Panorámica -->
+        <section id="room3" class="habitacion-principal">
+            <div class="carrusel-y-detalles">
+                <div class="room-carrusel">
+                    <button class="carrusel-navprev-btn">&lt;</button>
+                    <div class="carrusel-imagenes">
+                        <div class="room-img"><img src="img/habitaciones/SuitePanoramica.png" alt="Suite Panorámica 1"></div>
+                        <div class="room-img"><img src="img/habitaciones/SuitePanoramica2.png" alt="Suite Panorámica 2"></div>
+                        <div class="room-img"><img src="img/habitaciones/SuitePanoramica3.png" alt="Suite Panorámica 3"></div>
+                        <div class="room-img"><img src="img/habitaciones/SuitePanoramica4.png" alt="Suite panoramica 4"></div>
+                    </div>
+                    <button class="carrusel-navnext-btn">&gt;</button>            
+                </div>
+                <div id="room3" class="room-details">
+                    <h1 class="room-name">Suite Panorámica</h1>
+                    <p class="room-description">Esta sería una de las habitaciones más exclusivas. Contaría con ventanales de piso a techo 
+                        que ofrecen una vista espectacular de 180 grados de Medellín. Además, tendría un jacuzzi privado en el interior, 
+                        con la misma vista, ideal para una experiencia de lujo y relajación. 
+                    </p>
+                    <div class="amenidades-link">INSTALACIONES</div>
+                    <a href="reservas.html"><button class="reserva-btn">RESERVAR</button></a>
+                </div>
+            </div>
+
+            <aside class="amenities-box">
+                <h2 class="amenities-title">TODO LO QUE TIENE LA HABITACIÓN</h2>
+                <div class="amenities-grid">
+                    <h3 class="category-title"><i class="fas fa-paint-brush"></i> Estilo</h3>
+                    <ul><li><i class="fas fa-check"></i> Con combinación de madera oscura y piedra</li></ul>
+                    <h3 class="category-title"><i class="fas fa-counch"></i> Comodidades</h3>
+                    <ul><li><i class="fas fa-check"></i> Jacuzzi privado en el interior</li></ul>
+                    <h3 class="category-title"><i class="fas fa-city"></i> Vistas</h3>
+                    <ul><li><i class="fas fa-check"></i> Gracias a sus ventanales de piso a techo tiene vista a todo Medellín</li></ul>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Habitación familiar -->
+        <section id="room4" class="habitacion-principal">
+            <div class="carrusel-y-detalles">
+                <div class="room-carrusel">
+                    <button class="carrusel-navprev-btn">&lt;</button>
+                    <div class="carrusel-imagenes">
+                        <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar.png" alt="Suite Panorámica 1"></div>
+                        <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar2.png" alt="Suite Panorámica 2"></div>
+                        <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar3.png" alt="Suite Panorámica 3"></div>
+                        <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar4.png" alt="Suite panoramica 4"></div>
+                        <div class="room-img"><img src="img/habitaciones/HabitacionFamiliar5.png" alt="Suite panoramica 4"></div>
+                    </div>
+                    <button class="carrusel-navnext-btn">&gt;</button>            
+                </div>
+                <div id="room4" class="room-details">
+                    <h1 class="room-name">Habitación Familiar</h1>
+                    <p class="room-description">Una opción pensada para familias o grupos pequeños. Podría ser una habitación con dos ambientes 
+                        separados o un espacio de estilo loft. Contaría con camas adicionales o sofás cama, y una terraza más grande para que 
+                        todos los huéspedes puedan disfrutar juntos del aire libre y las vistas.
+                    </p>
+                    <div class="amenidades-link">INSTALACIONES</div>
+                    <a href="reservas.html"><button class="reserva-btn">RESERVAR</button></a>
+                </div>
+            </div>
+
+            <aside class="amenities-box">
+                <h2 class="amenities-title">TODO LO QUE TIENE LA HABITACIÓN</h2>
+                <div class="amenities-grid">
+                    <h3 class="category-title"><i class="fas fa-paint-brush"></i> Estilo</h3>
+                    <ul><li><i class="fas fa-check"></i> Con dos ambientes separados</li></ul>
+                    <h3 class="category-title"><i class="fas fa-couch"></i> Comodidades</h3>
+                    <ul><li><i class="fas fa-check"></i> Camas adicionales</li><li><i class="fas fa-check"></i> Terraza grande</li></ul>
+                    <h3 class="category-title"><i class="fas fa-mountain"></i> Vistas</h3>
+                    <ul><li><i class="fas fa-check"></i> A la montaña</li><li><i class="fas fa-check"></i> A todo Medellín</li></ul>
+                </div>
+            </aside>
+        </section>
+
         </div>
     </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <section class="footer-container">
+            <!-- Sección de marcas -->
+            <div class="footer-marcas">
+                <img src="img/marca/iconoBlanco.png" alt="Logotipos de marcas">
+            </div>
+
+            <!-- Sección de redes sociales y enlaces legales -->
+            <section class="footer-rrss">
+                <div class="social-rrss-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </section>
+        </section>
+        
+        <!-- Información legal y de derechos de autor -->
+        <div class="legal-info">
+            <p>
+                &copy; 2025 Hotel Eterna Primavera. Todos los derechos reservados.
+                <br>
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Términos y condiciones</a> |
+                <a href="#">Aviso legal</a> |
+                <a href="#">Preferencias de cookies</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

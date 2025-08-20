@@ -23,6 +23,7 @@
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
@@ -30,7 +31,7 @@
 }
 
 .header.scrolled {
-    background: rgba(30, 30, 30, 0.85);
+    background: rgba(30, 30, 30, 0.75);
 }
 
 .icono {
@@ -38,6 +39,7 @@
     width: auto;
     z-index: 2;
     transition: height 0.3s;
+    margin-right: 24px;
 }
 
 .menu-alt {
@@ -46,6 +48,12 @@
     cursor: pointer;
     padding: 5px;
     z-index: 1001;
+}
+
+.main-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .main-nav ul {

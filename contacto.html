@@ -6,6 +6,8 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/contanto.css">
     <link rel="shortcut icon" href="./img/marca/iconSinFondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Encabezado -->
@@ -29,7 +31,40 @@
     </header>   
     
     <main>
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <div class="contacto-contenedor">
 
+                <!-- Formulario -->
+                <form class="formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electronico" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <!-- Información de contacto -->
+                <div class="info-contacto">
+                    <h3>Hotel Eterna Primavera</h3>
+                        <p><i class="fas fa-phone-alt"></i> +57 312 456 7890</p>
+                        <p><i class="fas fa-envelope"></i> recepcion@eternaprimavera.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Medellín</p>
+                    <div class="mapa">
+                        <!-- Puedes integrar Google Maps -->
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9094072795983!2d-75.57940328573526!3d6.244203495481556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a01b7f4c4b%3A0xabb8a3e0a5a741ec!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1691782056217!5m2!1ses!2sco" 
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

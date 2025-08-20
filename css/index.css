@@ -188,9 +188,10 @@
 }
 
 #servicios {
-    background-color: #af6a32d2;
+    background-color: #ddc8aa;
     padding: 100px 20px;
     text-align: center;
+    background: linear-gradient(180deg, #eee0cd, #ddc8aa );
 }
 
 .intro-servicios {
@@ -325,6 +326,27 @@
     gap: 16px;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.grid button {
+  width: 100%;
+  background: #8A4A3C;
+  color: rgb(241, 228, 202);
+  border: none;
+  padding: 10px;
+  border-radius: none;
+  border-top: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.grid p {
+    transform: translateY(-40px);
+}
+
+.grid button:hover {
+    background: #58362c;
 }
 
 .habitacion {

@@ -79,7 +79,7 @@
 
 .main-nav a:hover,
 .main-nav a:focus {
-    color: #8A4A3C;
+    color: #aa8c65;
 }
 
 .main-nav li {
@@ -97,8 +97,71 @@
     letter-spacing: 1px;
 }
 
+/* Main */
+#reservas h1, p{
+    text-align: center;
+    color: #fff;
+}
 
+#reservas {
+    background-color: #613e0c94;
+    padding-top: 70px;
+    padding-bottom: 2rem;
+}
 
+main {
+    background-color: transparent;
+    width: 100%;
+}
+
+.form-reserva {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-reserva label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+.form-reserva input,
+.form-reserva select,
+.form-reserva textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-reserva button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #8A4A3C;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: background 0.3s;
+}
+.form-reserva button[type="reset"] {
+    background: #dbdbdb;
+    color: #333;
+}
+.form-reserva button:hover {
+    background: #aa8c65;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
 /* FOOTER */
 .footer {

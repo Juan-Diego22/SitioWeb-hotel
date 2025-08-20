@@ -31,21 +31,42 @@
         <section id="reservas">
             <h1>Reservas</h1>
             <p>Realiza tu reserva en línea de manera rápida y segura.</p>
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
+            <form action="#" method="post" class="form-reserva">
+                <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
-
-                <label for="fecha">Fecha de llegada:</label>
-                <input type="date" id="fecha" name="fecha" required>
-
-                <label for="personas">Número de personas:</label>
-                <input type="number" id="personas" name="personas" min="1" max="10">
-
+            
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
-
-                <button type="reset">Restablecer</button>
-                <button type="submit">Reservar</button>
+            
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{7,15}">
+            
+                <label for="fecha-entrada">Fecha de entrada:</label>
+                <input type="date" id="fecha-entrada" name="fecha_entrada" required>
+            
+                <label for="fecha-salida">Fecha de salida:</label>
+                <input type="date" id="fecha-salida" name="fecha_salida" required>
+            
+                <label for="personas">Número de personas:</label>
+                <input type="number" id="personas" name="personas" min="1" max="10" required>
+            
+                <label for="habitacion">Tipo de habitación:</label>
+                <select id="habitacion" name="habitacion" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="estandar">Habitación Estandar</option>
+                    <option value="junior">Suite Junior</option>
+                    <option value="Panoramica">Suite Panoramica</option>
+                    <option value="familiar">Habitación Familiar</option>
+                    <option value="eventos">Sala de Eventos</option>
+                </select>
+            
+                <label for="peticiones">Peticiones especiales:</label>
+                <textarea id="peticiones" name="peticiones" rows="3" placeholder="Ejemplo: Cama extra, decoración especial, etc."></textarea>
+            
+                <div class="form-buttons"">
+                    <button type="reset">Restablecer</button>
+                    <button type="submit">Reservar</button>
+                </div>
             </form>
         </section>
     </main>

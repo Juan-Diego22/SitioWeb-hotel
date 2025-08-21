@@ -101,7 +101,7 @@
 #contacto {
   padding: 90px 20px;
   background-color: #fff;
-  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  background: radial-gradient(circle, #eee0cd, #c0ad93 );
   animation: fadeIn 1.2s ease-in;
 }
 
@@ -120,16 +120,20 @@
   flex-wrap: wrap;
   max-width: 1050px;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /* Formulario */
 .formulario {
   flex: 1;
   min-width: 340px;
-  background: #fff;
+  background:  rgb(243, 233, 214);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding-right: 40px;
+  padding-left: 20px;
 }
 
 .formulario label {
@@ -163,7 +167,7 @@
   background: #8A4A3C;
   color: #fff;
   border: none;
-  padding: 14px;
+  padding: 10px;
   border-radius: 8px;
   font-size: 1.1em;
   cursor: pointer;
@@ -177,11 +181,20 @@
 /* Información de contacto */
 .info-contacto {
   flex: 1;
-  min-width: 320px;
-  background: #fff;
-  padding: 25px;
+  min-width: 300px;
+  background: rgb(243, 233, 214);
+  padding: 40px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.info-contacto .icono {
+    z-index: 10;
+    transform: translateX(270px) translateY(-50px);
+    width: 10px;
+    height: 10px;
 }
 
 .info-contacto h3 {
@@ -200,6 +213,8 @@
   margin-top: 15px;
   border-radius: 8px;
   overflow: hidden;
+  transform: translateY(15px);
+  width: auto;
 }
 
 

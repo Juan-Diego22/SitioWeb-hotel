@@ -4,8 +4,6 @@
 
 A fully responsive, elegant hotel website built from scratch with pure **HTML5, CSS3 and JavaScript**. Designed to deliver a premium user experience on desktop, tablet and mobile devices.
 
-👉 **Live Demo**: https://juan-diego22.github.io/SitioWeb-hotel/  *(lo tendrás en 5 minutos con GitHub Pages)*
-
 # Features
 - Fully responsive design (mobile-first approach)
 - Smooth navigation with hamburger menu on mobile
@@ -30,4 +28,4 @@ A fully responsive, elegant hotel website built from scratch with pure **HTML5, 
 1. Clone the repo
 2. Open `index.html` in your browser
 
-Built with ❤️ by Juan Diego López – Junior Full-Stack Developer | Open to remote opportunities 🚀
+Built with  by Juan Diego López – Junior Full-Stack Developer | Open to remote opportunities 🚀

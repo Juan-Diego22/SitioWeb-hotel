@@ -1,6 +1,6 @@
 # Eterna Primavera Hotel – Luxury Responsive Website 
 
-![Eterna Primavera Banner](Hotel.png) 
+![Eterna Primavera Banner]((https://github.com/Juan-Diego22/Juan-Diego22/blob/main/Hotel.png) 
 
 A fully responsive, elegant hotel website built from scratch with pure **HTML5, CSS3 and JavaScript**. Designed to deliver a premium user experience on desktop, tablet and mobile devices.
 

@@ -2,7 +2,7 @@
 
 **Live Demo**: [Click here to visit the hotel!](https://juan-diego22.github.io/SitioWeb-hotel/)
 
-![Eterna Primavera Banner](Hotel.png) 
+![Eterna Primavera Banner](screenshorts/Hotel.png) 
 
 A fully responsive, elegant hotel website built from scratch with pure **HTML5, CSS3 and JavaScript**. Designed to deliver a premium user experience on desktop, tablet and mobile devices.
 

@@ -1,4 +1,4 @@
-# Eterna Primavera Hotel – Luxury Responsive Website 🌸
+# Eterna Primavera Hotel – Luxury Responsive Website 
 
 ![Eterna Primavera Banner](Hotel.png) 
 

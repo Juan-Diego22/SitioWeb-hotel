@@ -1,5 +1,7 @@
 # Eterna Primavera Hotel – Luxury Responsive Website 
 
+**Live Demo**: [Click here to visit the hotel!](https://juan-diego22.github.io/SitioWeb-hotel/)
+
 ![Eterna Primavera Banner](Hotel.png) 
 
 A fully responsive, elegant hotel website built from scratch with pure **HTML5, CSS3 and JavaScript**. Designed to deliver a premium user experience on desktop, tablet and mobile devices.
@@ -12,6 +14,8 @@ A fully responsive, elegant hotel website built from scratch with pure **HTML5, 
 - About Us section highlighting the hotel's story and team
 - Elegant color palette and modern typography
 - Subtle animations and hover effects for better UX
+
+
 
 ## Technologies Used
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />

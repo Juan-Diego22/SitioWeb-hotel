@@ -26,4 +26,4 @@ A fully responsive, elegant hotel website built from scratch with pure **HTML5, 
 1. Clone the repo
 2. Open `index.html` in your browser
 
-Built with  by Juan Diego López – Junior Full-Stack Developer | Open to remote opportunities 🚀
+
